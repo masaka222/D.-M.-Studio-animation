@@ -1,0 +1,6 @@
+.Header{
+    background-color: blueviolet;
+
+    grid-column: 1 / -1;
+    grid-row: header-start / header-end;
+}

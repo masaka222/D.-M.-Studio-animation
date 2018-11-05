@@ -1,0 +1,6 @@
+.Main{
+    background-color: orangered;
+
+    grid-column: full-start / full-end;
+    grid-row: full-start / full-end;
+}

@@ -17,11 +17,16 @@ body{
 
 .App {
   width: 100%;
+  /* Background Positioning */
   height: 100vh;
-  max-height: 100vw;
   background-image: url(DM-background.jpg);
-  background-size: 100vw;
-  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
   position: relative;
+
+  /* Grid */
+  display: grid;
+  grid-template-rows: [header-start] 3rem  [header-end full-start] calc(100vh - 3rem) [full-end]; 
+  grid-template-columns: [sidebar-start] 3vw [sidebar-end full-start] 97vw [full-end];
 }
 

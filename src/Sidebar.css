@@ -1,0 +1,6 @@
+.Sidebar{
+    background-color: greenyellow;
+
+    grid-column: sidebar-start / sidebar-end;
+    grid-row: 2 / -1;
+}
