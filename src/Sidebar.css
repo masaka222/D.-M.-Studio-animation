@@ -1,6 +1,29 @@
-.Sidebar{
-    background-color: greenyellow;
-
+.sidebar{
     grid-column: sidebar-start / sidebar-end;
     grid-row: 2 / -1;
+
+    /* Flexbox */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; 
+}
+
+.sidebar-text{
+    color: white;
+    transform: rotate(-90deg);
+    /* Safari */
+    -webkit-transform: rotate(-90deg);
+    /* Firefox */
+    -moz-transform: rotate(-90deg);
+    /* IE */
+    -ms-transform: rotate(-90deg);
+    
+    transform-origin: left top 0;
+    display: inline-block;
+
+    white-space: pre;
+    padding: 1rem;
+    margin-bottom: 7rem;
+
+    font-size: 1.5rem;
 }
