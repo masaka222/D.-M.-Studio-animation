@@ -1,6 +1,22 @@
-.Main{
+.main{
     background-color: orangered;
-
+    color: white;
     grid-column: full-start / full-end;
     grid-row: full-start / full-end;
+
+    font-family: Komoda;
+    font-weight: 800;
+    font-size: 17rem;
+
+    display: grid;
+    grid-template-rows: repeat(3, min-content);
+    grid-template-columns: repeat(3, min-content);
+}
+
+#about-text{
+    grid-column: 1 / -1;
+}
+
+#experiences-text{
+    grid-column: 1/-1;
 }
