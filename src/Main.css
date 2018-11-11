@@ -1,6 +1,5 @@
 .main{
-    background-color: orangered;
-    color: white;
+    color: black;
     grid-column: full-start / full-end;
     grid-row: full-start / full-end;
 
@@ -9,8 +8,8 @@
     font-size: 17rem;
 
     display: grid;
-    grid-template-rows: repeat(3, min-content);
-    grid-template-columns: repeat(3, min-content);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
 }
 
 #about-text{
@@ -19,4 +18,28 @@
 
 #experiences-text{
     grid-column: 1/-1;
+}
+
+/* LETTER POSITIONING */
+.main-we,
+.main-are,
+.main-line,
+.main-about,
+.main-experiences{
+    display: flex;
+    justify-content: space-around;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    padding: 2rem;
+}
+
+.main-line{
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 0.5rem solid black;
+    padding-bottom: 0;
+
+    display: flex;
+    align-self: center;
 }
