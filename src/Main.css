@@ -4,7 +4,7 @@
     grid-row: full-start / full-end;
 
     font-family: Komoda;
-    font-weight: 800;
+    font-weight: 600;
     font-size: 17rem;
 
     display: grid;
@@ -26,6 +26,7 @@
 .main-line,
 .main-about,
 .main-experiences{
+    position: relative;
     display: flex;
     justify-content: space-around;
     margin-left: 4rem;
@@ -42,4 +43,26 @@
 
     display: flex;
     align-self: center;
+}
+
+/* BOXES COVERING TEXT */
+.main-we::after,
+.main-are::after,
+.main-about::after,
+.main-experiences::after{
+    content: "";
+    position: absolute;
+    bottom: 3rem;
+    left: 0;
+    height: 60%;
+    width: 100%;
+    background-color: black;
+    transition: all 1s cubic-bezier(0,0,0,1);
+}
+
+.main-we:hover::after,
+.main-are:hover::after,
+.main-about:hover::after,
+.main-experiences:hover::after{
+    height: 0%;
 }
