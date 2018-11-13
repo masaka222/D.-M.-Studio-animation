@@ -60,9 +60,27 @@
     transition: all 1s cubic-bezier(0,0,0,1);
 }
 
+/* Box Animation */
 .main-we:hover::after,
 .main-are:hover::after,
 .main-about:hover::after,
 .main-experiences:hover::after{
     height: 0%;
+}
+
+
+
+/* Text Scale Animation */
+.main-we span,
+.main-are span,
+.main-about span,
+.main-experiences span{
+    transition: all 1s cubic-bezier(0,0,0,1);
+}
+
+.main-we:hover span,
+.main-are:hover span,
+.main-about:hover span,
+.main-experiences:hover span{
+    transform: scale(1.1);
 }
