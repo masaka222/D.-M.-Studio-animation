@@ -5,14 +5,14 @@ class Main extends Component {
   render() {
     return (
       <div className="main">
-        <div className="main-we"> 
+        <div className="main-we" id="we-text"> 
             <span> W </span>
             <span> E </span> 
         </div>
 
-        <div className="main-line"></div>
+        <div className="main-line" id="line-text"></div>
 
-        <div className="main-are"> 
+        <div className="main-are" id="are-text"> 
             <span>A</span>
             <span>R</span>
             <span>E</span>

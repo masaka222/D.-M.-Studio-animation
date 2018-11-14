@@ -12,6 +12,12 @@
     grid-template-columns: repeat(3, 1fr);
 }
 
+#we-text{
+    z-index: 2;
+}
+#are-text{
+    z-index: 2;
+}
 #about-text{
     grid-column: 1 / -1;
 }
@@ -43,6 +49,7 @@
 
     display: flex;
     align-self: center;
+    z-index: 2;
 }
 
 /* BOXES COVERING TEXT */
@@ -72,6 +79,7 @@
 
 /* Text Scale Animation */
 .main-we span,
+.main-line,
 .main-are span,
 .main-about span,
 .main-experiences span{
