@@ -31,12 +31,6 @@
     transform: scale(200);
 }
 
-.navigation__checkbox:checked ~ .navigation__nav{
-    opacity: 1;
-    width: 100%;
-    visibility: visible;
-}
-
 /* ICON */
 
 .navigation__icon{

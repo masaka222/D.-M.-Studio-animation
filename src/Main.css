@@ -1,5 +1,6 @@
 .main{
     color: black;
+    opacity: 1;
     grid-column: full-start / full-end;
     grid-row: full-start / full-end;
 
@@ -12,12 +13,15 @@
     grid-template-columns: repeat(3, 1fr);
 }
 
+/* Z-index is 2, so that it can stay on top when the Navigation is open */
 #we-text{
     z-index: 2;
 }
 #are-text{
     z-index: 2;
 }
+
+/* Positioning of the two other texts in the Grid */
 #about-text{
     grid-column: 1 / -1;
 }
@@ -38,6 +42,7 @@
     margin-left: 4rem;
     margin-right: 4rem;
     padding: 2rem;
+    transition: opacity 1s cubic-bezier(0,0,0,1);
 }
 
 .main-line{
@@ -67,6 +72,12 @@
     transition: all 1s cubic-bezier(0,0,0,1);
 }
 
+/* CSS to hide the box  */
+.hidden::after{
+    opacity: 0;
+    height: 0;
+}
+
 /* Box Animation */
 .main-we:hover::after,
 .main-are:hover::after,
@@ -86,6 +97,7 @@
     transition: all 1s cubic-bezier(0,0,0,1);
 }
 
+/* Hover effect */
 .main-we:hover span,
 .main-are:hover span,
 .main-about:hover span,
