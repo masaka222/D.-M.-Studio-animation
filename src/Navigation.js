@@ -17,6 +17,8 @@ const Navigation = (props) => {
             document.getElementById('about-text').classList.add('hidden');
             document.getElementById('experiences-text').style.opacity = "0";
             document.getElementById('experiences-text').classList.add('hidden');
+
+            /* Time dependent animations */
         }
         else{
             /* Black colors to the first line of the Grid */
@@ -41,6 +43,49 @@ const Navigation = (props) => {
                     <span className="navigation__icon">&nbsp;</span>
                 </label>
                 <div className="navigation__background">&nbsp;</div>  
+                {/*
+                <div className="navigation-grid">
+                    <div className="navigation-grid__services">
+                        01 OUR SERVICES
+                    </div>
+                    <div className="navigation-grid__whoweare">
+                        02 WHO WE ARE
+                    </div>
+                    <div className="navigation-grid__hotcases">
+                        03 HOT CASES
+                    </div>
+                    <div className="navigation-grid__letstalk">
+                        04 LET'S TALK
+                    </div>
+                </div>
+                */}
+
+                <div className="navigation-grid">
+                    <div className="navmain-we" id="ourServices-text"> 
+                        <span> 01 </span>
+                        <span> OUR SERVICES </span> 
+                    </div>
+                    <div className="navmain-line" id="navline1"> </div>
+
+                    <div className="navmain-line" id="navline2"> </div>
+                    <div className="navmain-are" id="whoWeAre-text"> 
+                        <span>02</span>
+                        <span>WHO WE ARE</span>
+                    </div>
+                    <div className="navmain-line" id="navline3"> </div>
+
+
+                    <div className="navmain-about" id="hotCases-text"> 
+                        <span>03</span>
+                        <span>HOT CASES</span>
+                    </div>
+                    <div className="navmain-line" id="navline4"> </div>
+                    <div className="navmain-experiences" id="letsTalk-text">
+                        <span>04</span>
+                        <span>LET'S TALK</span>
+                    </div>
+                    
+                </div>
             </div>
         );
 }
