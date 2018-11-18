@@ -15,9 +15,7 @@ class Header extends Component {
     return (
       <div className="header">
         <p className="header-text"> D . M . S T U D I O </p>
-        <button className="header-button" onClick={ani}>
-          <div className="navigation-background" id="nav-background">&nbsp;</div>
-        </button>
+        
       </div>
     );
   }

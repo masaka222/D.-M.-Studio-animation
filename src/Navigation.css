@@ -59,6 +59,15 @@
 .navigation__icon::after{top: 0.5rem;}
 
 
+/* To make the navigation icon not shrink while font size is becoming smaller */
+@media only screen and (max-height: 740px){
+    .navigation__icon{
+        height: .2rem;
+    }
+    .navigation__icon::before{top: -0.4rem;}
+    .navigation__icon::after{top: 0.5rem;}
+}
+
 
 .navigation__checkbox:checked + .navigation__button .navigation__icon{
     background-color: transparent;

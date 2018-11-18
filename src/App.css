@@ -35,3 +35,39 @@ body{
   grid-template-columns: [sidebar-start] 3vw [sidebar-end full-start] 97vw [full-end];
 }
 
+
+
+
+/* Media Queries for large width */
+@media only screen and (min-width: 75em) and (max-height: 740px){
+  html{
+      font-size: 50%;
+  }
+}
+@media only screen and (min-width: 75em) and (max-height: 640px){
+  html{
+      font-size: 40%;
+  }
+}
+
+
+
+/* Media Queries for medium width */
+@media only screen and (max-width: 75em){
+  html{
+      font-size: 50%;
+  }
+}
+
+@media only screen and (max-width: 75em) and (max-height: 650px){
+  html{
+      font-size: 40%;
+  }
+}
+@media only screen and (max-width: 75em) and (max-height: 600px){
+  html{
+      font-size: 30%;
+  }
+}
+
+
