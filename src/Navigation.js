@@ -5,6 +5,9 @@ const Navigation = (props) => {
 
     function ani(){
         if (document.getElementById("navi-toggle").checked == true) {
+            /* Disable Checkbox until the animation is over */
+            document.getElementById("navi-toggle").disabled = true;
+
             /* White colors to the first line of the Grid */
             document.getElementById('we-text').style.color = "white";
             document.getElementById('we-text').classList.add('hidden');
@@ -52,7 +55,12 @@ const Navigation = (props) => {
             setTimeout(function() {
                 document.getElementById('letsTalk-text').classList.add('animation2-TextUp')
             },2400)
-            
+
+            /* Enable the checkbox again after the animations are over*/
+            setTimeout(function() {
+                document.getElementById("navi-toggle").disabled = false
+            },2400)
+
         }
         else{
             /* Black colors to the first line of the Grid */
