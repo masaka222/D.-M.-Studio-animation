@@ -11,7 +11,7 @@ class Main extends Component {
         </div>
 
         <div className="main-line" id="line-text">
-          <span className="main-line__text">D . M . S T U D I O </span> 
+          <span className="main-line__text" id="DMSTUDIO-text">D . M . S T U D I O </span> 
         </div>
 
         <div className="main-are" id="are-text"> 

@@ -47,7 +47,7 @@
 
 .main-line{
     display: block;
-    height: 1px;
+    height: 3px;
     border: 0;
     border-top: 0.5rem solid black;
     padding-bottom: 0;
@@ -63,6 +63,7 @@
     font-size: 1.7rem;
     font-weight: 600;
     letter-spacing: .2rem;
+    visibility: hidden;
     transform: translateY(-6rem);
 }
 
