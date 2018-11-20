@@ -204,6 +204,14 @@
     visibility: visible !important;
 }
 
+
+/* MEDIA QUERIES */
+@media only screen and (max-height: 600px){
+    .navigation__fullscreen{
+        margin-top: 25rem;
+    }
+}
+
 /* ANIMATION KEYFRAMES */
 
 /* For D.M. Studio text */

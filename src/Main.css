@@ -114,3 +114,10 @@
 .main-experiences:hover span{
     transform: scale(1.1);
 }
+
+/* Hide text when it becomes too small and starts collapsing */
+@media only screen and (max-width: 768px){
+    .main-line__text{
+        opacity: 0;
+    }
+}
